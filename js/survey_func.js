@@ -29,6 +29,7 @@
 			afterSelect: function (event, state) {
 				$("#progressbar").progressbar("value", state.percentComplete);
 				$("#location").text("(" + state.stepsComplete + "/" + state.stepsPossible + ")");
+				
 			}
 		});
 		// Validate select
