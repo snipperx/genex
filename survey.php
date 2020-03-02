@@ -99,7 +99,7 @@
           </g>
          </svg>
      </div>
-	<h4><span>Request successfully sent!</span>Thank you for your time</h4>
+	<h4><span>Your response has been received!</span>Thank you for your time</h4>
 	<small>You will be redirect back in 5 seconds.</small>
 </div>
 </body>

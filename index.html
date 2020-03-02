@@ -7,13 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Genex Daily Checks Web 2018</title>
 
-    <!-- Favicons-->
-    <!--    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">-->
-    <!--    <link rel="apple-touch-icon" type="image/x-icon" href="img/apple-touch-icon-57x57-precomposed.png">-->
-    <!--    <link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="img/apple-touch-icon-72x72-precomposed.png">-->
-    <!--    <link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="img/apple-touch-icon-114x114-precomposed.png">-->
-    <!--    <link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="img/apple-touch-icon-144x144-precomposed.png">-->
-
     <!-- GOOGLE WEB FONT -->
     <link href="https://fonts.googleapis.com/css?family=Caveat|Poppins:300,400,500,600,700&display=swap"
           rel="stylesheet">
@@ -62,7 +55,102 @@
 
                                 <!--	!Step 1	-->
                                 <div class="step">
-                                    <h3 class="main_question mb-4"><strong>1 of 7</strong>Where you able to log into the
+                                    <h3 class="main_question mb-4"><strong>1 of 8</strong>What is your Gender?</h3>
+                                    <div class="review_block">
+                                        <ul>
+                                            <li>
+                                                <div class="checkbox_radio_container">
+                                                    <input type="radio" id="male" name="question_4" class="required"
+                                                           value="male" onchange="getVals(this, 'question_4');">
+                                                    <label class="radio" for="male"></label>
+                                                    <label for="male" class="wrapper">Male</label>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="checkbox_radio_container">
+                                                    <input type="radio" id="female" name="question_4" class="required"
+                                                           value="female" onchange="getVals(this, 'question_4');">
+                                                    <label class="radio" for="female"></label>
+                                                    <label for="female" class="wrapper">Female</label>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="checkbox_radio_container">
+                                                    <input type="radio" id="other" name="question_4" class="required" value="other" onClick="getResults(this)"
+                                                           onchange="getVals(this, 'question_4');">
+                                                    <label class="radio" for="other"></label>
+                                                    <label for="other" class="wrapper">Other</label>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="checkbox_radio_container">
+                                                    <input type="radio" id="prefer" name="question_4" class="required"
+                                                           value="prefer not to say"
+                                                           onchange="getVals(this, 'question_4');">
+                                                    <label class="radio" for="prefer"></label>
+                                                    <label for="prefer" class="wrapper">Prefer not to say</label>
+                                                </div>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                    <!--    other messages     -->
+                                    <div id="gender" class="form-group-gender">
+                                        <label for="additional_message_2_label">Please specify </label>
+                                        <textarea name="additional_message_2" id="additional_message_3_label" class="form-control" style="height:120px;"
+                                                  onkeyup="getVals(this, 'additional_message_2');"></textarea>
+                                    </div>
+                                </div>
+                                <div class="step">
+                                    <h3 class="main_question mb-4"><strong>2 of 8</strong>What is your Age?</h3>
+                                    <div class="review_block">
+                                        <ul>
+                                            <li>
+                                                <div class="checkbox_radio_container">
+                                                    <input type="radio" id="18" name="question_3" class="required"
+                                                           value="18" onchange="getVals(this, 'question_3');">
+                                                    <label class="radio" for="18"></label>
+                                                    <label for="18" class="wrapper">18-24 years old</label>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="checkbox_radio_container">
+                                                    <input type="radio" id="25" name="question_3" class="required"
+                                                           value="25" onchange="getVals(this, 'question_3');">
+                                                    <label class="radio" for="25"></label>
+                                                    <label for="25" class="wrapper">25-34years old</label>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="checkbox_radio_container">
+                                                    <input type="radio" id="34" name="question_3" class="required"
+                                                           value="34" onchange="getVals(this, 'question_3');">
+                                                    <label class="radio" for="34"></label>
+                                                    <label for="34" class="wrapper">35-44 years old</label>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="checkbox_radio_container">
+                                                    <input type="radio" id="45" name="question_3" class="required"
+                                                           value="45" onchange="getVals(this, 'question_3');">
+                                                    <label class="radio" for="45"></label>
+                                                    <label for="45" class="wrapper">45 -54 years old</label>
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div class="checkbox_radio_container">
+                                                    <input type="radio" id="55" name="question_3" class="required"
+                                                           value="55" onchange="getVals(this, 'question_3');">
+                                                    <label class="radio" for="55"></label>
+                                                    <label for="55" class="wrapper">over 55 years old</label>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="step">
+                                    <h3 class="main_question mb-4"><strong>3 of 8</strong>Where you able to log into the
                                         insights platform ?</h3>
                                     <div class="review_block">
                                         <ul>
@@ -94,7 +182,7 @@
                                 </div>
                                 <!--	!Step 2	-->
                                 <div class="step">
-                                    <h3 class="main_question"><strong>2 of 7</strong>How would you rate the load speed
+                                    <h3 class="main_question"><strong>4 of 8</strong>How would you rate the load speed
                                         on the Genex Insights platform ?</h3>
                                     <div class="review_block_smiles">
                                         <ul class="clearfix">
@@ -150,107 +238,9 @@
                                     </div>
                                 </div>
                                 <!-- /step 3-->
-                                <div class="step">
-                                    <h3 class="main_question mb-4"><strong>3 of 7</strong>What is your Age?</h3>
-                                    <div class="review_block">
-                                        <ul>
-                                            <li>
-                                                <div class="checkbox_radio_container">
-                                                    <input type="radio" id="18" name="question_3" class="required"
-                                                           value="18" onchange="getVals(this, 'question_3');">
-                                                    <label class="radio" for="18"></label>
-                                                    <label for="18" class="wrapper">18-24 years old</label>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="checkbox_radio_container">
-                                                    <input type="radio" id="25" name="question_3" class="required"
-                                                           value="25" onchange="getVals(this, 'question_3');">
-                                                    <label class="radio" for="25"></label>
-                                                    <label for="25" class="wrapper">25-34years old</label>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="checkbox_radio_container">
-                                                    <input type="radio" id="34" name="question_3" class="required"
-                                                           value="34" onchange="getVals(this, 'question_3');">
-                                                    <label class="radio" for="34"></label>
-                                                    <label for="34" class="wrapper">35-44 years old</label>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="checkbox_radio_container">
-                                                    <input type="radio" id="45" name="question_3" class="required"
-                                                           value="45" onchange="getVals(this, 'question_3');">
-                                                    <label class="radio" for="45"></label>
-                                                    <label for="45" class="wrapper">45 -54 years old</label>
-                                                </div>
-                                            </li>
-
-                                            <li>
-                                                <div class="checkbox_radio_container">
-                                                    <input type="radio" id="55" name="question_3" class="required"
-                                                           value="55" onchange="getVals(this, 'question_3');">
-                                                    <label class="radio" for="55"></label>
-                                                    <label for="55" class="wrapper">over 55 years old</label>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-
-                                <div class="step">
-                                    <h3 class="main_question mb-4"><strong>4 of 7</strong>What is your Gender?</h3>
-                                    <div class="review_block">
-                                        <ul>
-                                            <li>
-                                                <div class="checkbox_radio_container">
-                                                    <input type="radio" id="male" name="question_4" class="required"
-                                                           value="male" onchange="getVals(this, 'question_4');">
-                                                    <label class="radio" for="male"></label>
-                                                    <label for="male" class="wrapper">Male</label>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="checkbox_radio_container">
-                                                    <input type="radio" id="female" name="question_4" class="required"
-                                                           value="female" onchange="getVals(this, 'question_4');">
-                                                    <label class="radio" for="female"></label>
-                                                    <label for="female" class="wrapper">Female</label>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="checkbox_radio_container">
-                                                    <input type="radio" id="other" name="question_4" class="required"
-                                                           value="other" onchange="getVals(this, 'question_4');">
-                                                    <label class="radio" for="other"></label>
-                                                    <label for="other" class="wrapper">Other</label>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="checkbox_radio_container">
-                                                    <input type="radio" id="prefer" name="question_4" class="required"
-                                                           value="prefer not to say"
-                                                           onchange="getVals(this, 'question_4');">
-                                                    <label class="radio" for="prefer"></label>
-                                                    <label for="prefer" class="wrapper">Prefer not to say</label>
-                                                </div>
-                                            </li>
-
-                                        </ul>
-                                    </div>
-                                    <!--										 review_block-->
-                                    <div class="form-group-gender">
-                                        <label for="additional_message_2_label">Additional message</label>
-                                        <textarea name="additional_message_2" id="additional_message_3_label"
-                                                  class="form-control" style="height:120px;"
-                                                  onkeyup="getVals(this, 'additional_message_2');"></textarea>
-                                    </div>
-                                </div>
-
                                 <!-- /step 4-->
                                 <div class="step">
-                                    <h3 class="main_question mb-4"><strong>5 of 7</strong>Did the charts load in the
+                                    <h3 class="main_question mb-4"><strong>5 of 8</strong>Did the charts load in the
                                         dashboard ?</h3>
                                     <div class="review_block">
                                         <ul>
@@ -275,15 +265,15 @@
                                     </div>
                                     <!-- review_block-->
                                     <div class="form-group">
-                                        <label for="additional_message_3_label">Additional message</label>
-                                        <textarea name="additional_message_3" id="additional_message_2_label"
+                                        <label for="additional_message_4_label">Additional message</label>
+                                        <textarea name="additional_message_4" id="additional_message_4_label"
                                                   class="form-control" style="height:120px;"
-                                                  onkeyup="getVals(this, 'additional_message_3');"></textarea>
+                                                  onkeyup="getVals(this, 'additional_message_4');"></textarea>
                                     </div>
                                 </div>
                                 <!-- /step 5-->
                                 <div class="step">
-                                    <h3 class="main_question"><strong>6 of 7</strong>How would you rate the load speed
+                                    <h3 class="main_question"><strong>6 of 8</strong>How would you rate the load speed
                                         for Analytic charts ?</h3>
                                     <div class="review_block_smiles">
                                         <ul class="clearfix">
@@ -338,9 +328,9 @@
                                         </div>
                                     </div>
                                 </div>
-
+                                <!-- /step 6-->
                                 <div class="step">
-                                    <h3 class="main_question mb-4"><strong>7 of 7</strong>Do you want to generate a
+                                    <h3 class="main_question mb-4"><strong>7 of 8</strong>Do you want to generate a
                                         Resolve Alert?</h3>
                                     <div class="review_block">
                                         <ul>
@@ -363,103 +353,22 @@
                                         </ul>
                                     </div>
                                 </div>
-
-                                <div class="step">
-                                    <h3 class="main_question"><strong>4 of 5</strong>Summary</h3>
-                                    <div class="pre-scrollable">
-                                        <ul>
-                                            <li>
-                                                <strong>1</strong>
-                                                <h5>Where you able to log into the insights platform ?</h5>
-                                                <p id="question_1" class="mb-2"></p>
-                                                <p id="additional_message"></p>
-                                            </li>
-                                            <li>
-                                                <strong>2</strong>
-                                                <h5>How would you rate the load speed on the Genex Insights platform
-                                                    ?</h5>
-                                                <p id="question_2" class="mb-2"></p>
-                                                <p id="additional_message_2"></p>
-                                            </li>
-                                            <li>
-                                                <strong>3</strong>
-                                                <h5>What is your Age?</h5>
-                                                <p id="question_3"></p>
-                                            </li>
-                                            <li>
-                                                <strong>4</strong>
-                                                <h5>What is your Gender?</h5>
-                                                <p id="question_4"></p>
-                                            </li>
-                                            <li>
-                                                <strong>5</strong>
-                                                <h5>Did the charts load in the dashboard ?</h5>
-                                                <p id="question_5"></p>
-                                                <p id="additional_message_3"></p>
-                                            </li>
-                                            <li>
-                                                <strong>6</strong>
-                                                <h5>How would you rate the load speed for Analytic charts ?</h5>
-                                                <p id="question_6"></p>
-                                            </li>
-                                            <li>
-                                                <strong>7</strong>
-                                                <h5>Do you want to generate a Resolve Alert?</h5>
-                                                <p id="question_7"></p>
-
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <!-- /step 4-->
+                                <!-- /step 8-->
                                 <div class="submit step">
-                                    <h3 class="main_question"><strong>5 of 5</strong>Please fill with your details</h3>
-                                    <div class="form-group">
-                                        <label for="firstname">First Name</label>
-                                        <input type="text" name="firstname" id="firstname"
-                                               class="form-control required">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="lastname">Last Name</label>
-                                        <input type="text" name="lastname" id="lastname" class="form-control required">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="email">Your Email</label>
-                                        <input type="email" name="email" id="email" class="form-control required">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="telephone">Telephone</label>
-                                        <input type="text" name="telephone" id="telephone" class="form-control">
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-lg-3 col-md-3 col-3">
-                                            <div class="form-group">
-                                                <label for="age">Age</label>
-                                                <input type="text" name="age" id="age" class="form-control">
-                                            </div>
+                                    <div class="jumbotron text-center">
+                                        <div class="callout callout-danger">
+                                            <h4>Dear User</h4>
                                         </div>
-                                        <div class="col-9">
-                                            <div class="form-group radio_input">
-                                                <label class="container_radio">Male
-                                                    <input type="radio" name="gender" value="Male" class="required">
-                                                    <span class="checkmark"></span>
-                                                </label>
-                                                <label class="container_radio">Female
-                                                    <input type="radio" name="gender" value="Female" class="required">
-                                                    <span class="checkmark"></span>
-                                                </label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- /row -->
-                                    <div class="form-group terms">
-                                        <label class="container_check">Please accept our <a href="#" data-toggle="modal"
-                                                                                            data-target="#terms-txt"
-                                                                                            style="color:#fff; text-decoration: underline;">Terms
-                                            and conditions</a>
-                                            <input type="checkbox" name="terms" value="Yes" class="required">
-                                            <span class="checkmark"></span>
-                                        </label>
+                                        <br>
+                                        <h5 class="display-3">Thank You!</h5>
+                                        <p class="lead"><strong>For Participating in the Survey</strong><br>Your response has been received</p>
+                                        <hr>
+                                        <p>
+                                            Kind Regards
+                                        </p>
+                                        <p class="lead">
+                                        <h4>Support Team</h4>
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -467,7 +376,6 @@
                             <div id="bottom-wizard">
                                 <button type="button" name="backward" class="backward">Prev</button>
                                 <button type="button" name="forward" class="forward">Next</button>
-                                <button type="submit" name="process" class="submit">Submit</button>
                             </div>
                             <!-- /bottom-wizard -->
 
@@ -504,15 +412,6 @@
 
 <!-- Wizard script -->
 <script src="js/survey_func.js"></script>
-<!--<script>-->
-<!--	$(document).ready(function() {-->
-<!--		$(".form-group-gender").hide()-->
-<!--		$('[name=question_4]').on('change', function(){-->
-<!--			$('.form-group-gender').toggle(this.value === 'Show');-->
-<!--		})-->
-<!--	});-->
-<!--</script>-->
-
 
 </body>
 </html>

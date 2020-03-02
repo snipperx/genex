@@ -49,6 +49,7 @@
 		});
 	});
 
+
 // Summary 
 function getVals(formControl, controlType) {
 	switch (controlType) {
@@ -113,3 +114,17 @@ function getVals(formControl, controlType) {
 			break;
 	}
 }
+	// Hide gender other textbox
+	$('#gender').hide();
+
+	$(function() {
+		$('input[name="question_4"]').on('click', function() {
+			if ($(this).val() == 'other') {
+				console.log('test');
+				$('#gender').show();
+			}
+			else {
+				$('#gender').hide();
+			}
+		});
+	});
